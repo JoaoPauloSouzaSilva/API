@@ -35,26 +35,66 @@
   Inicialmente deve ser criado uma pasta para colocarmos a nossa API dentro, no exemplo a pasta vai ser chamada de API. Agora iremos criar o ambiente virtual, no terminal do vscode, o botão está localizado na parte superior esquerda, após aberto, digite o comando:
 
   <strong>
-    python3 -m venv ./venv
+    >>> python3 -m venv ./venv
   </strong>
 
   ⚠️ É importante ressaltar que sempre após a escrita de um comando no terminal, deve-se pressionar o enter, para que o comando seja executado.
-</p>
 
-<p>
   ❌ Nesse momento, no meu projeto deu um erro pois não havia instalado o python 3, caso o mesmo aconteça, na mensagem de erro irá aparecer um link para baixar, aperte Ctrl e clique nele e abrirá a opção de instalar, após o fim da instalação, reescreva o comando anterior ou aperte a tecla de seta para cima e pressione enter. Se aparecer uma pasta chamada “ venv ” dentro da pasta API no caso do exemplo, significa que o ambiente virtual foi criado.
 
   Agora devemos ativar a venv, também no terminal deve-se digitar o comando:
-</p>
 
-<p>
   <strong>
-    venv/Scripts/activate
+    >>> venv/Scripts/activate
   </strong>
-</p>
 
-<p>
   ⚠️ É importante ressaltar que esse comando é para o sistema operacional windows, caso o sistema operacional seja o mac ou linux, use o comando ( <strong> source venv/bin/activate </strong> ).
 
   Após apertar o enter, na nova linha que aparecer, deve conter como primeira palavra o (venv), isso significa que o ambiente virtual foi ativado. 
+
+  Agora iremos iniciar a instalação das dependências do ambiente virtual, primeiramente instalaremos o Django com o seguinte comando 
+
+    <strong>
+        >>> pip install django 
+    </strong>
+
+  Possivelmente o terminal indicará um upgrading, e lhe dará o comando, o mesmo estará amarelo, caso não encontre o comando para o upgrading, digite o seguinte comando ( <strong> pip install –upgrade pip </strong> ) 
+
+  Para termos certeza de que o django foi instalado, usaremos o seguinte comando para visualizarmos quais as dependências que o projeto possui
+
+  <strong>
+    >>> pip freeze 
+  </strong>
+
+  O terminal retornará uma lista  de dependências e é necessário que o django esteja presente para prosseguirmos. 
+
+  Agora iremos criar a nossa aplicação, a partir do comando  
+
+  <strong>
+    >>> django-admin startproject config .
+  </strong>
+
+  O <strong> django-admin </strong> será responsável por todas as configurações da nossa aplicação, para confirmarmos que deu tudo certo, dentro da nossa pasta API, terá uma nova pasta chamada config e um arquivo .py chamado manage. 
+
+  Para rodar o nosso servidor devemos utilizar o comando 
+
+  <strong>
+    >>> python manage.py runserver .
+  </strong>
+
+  ❌ Após apertar enter, aparecerá uma mensagem dizendo que existem algumas migrações pendentes, mais a frente resolveremos esse ponto. 
+
+  ⚠️ É importante ressaltar que quando instalamos o Django a gente já terá o sqlite integrado nele, sendo assim, não vamos precisar instalar um outro banco de dados. 
+
+  Juntamente com a mensagem citada anteriormente, aparecerá no terminal o link para o servidor que está na nossa máquina, entretanto, o mesmo está em inglês, para mudarmos isso, vamos seguir o seguinte passo a passo
+
+  Dentro da nossa pasta <strong> API </strong>, vamos acessar a aba <strong> config </strong> e o arquivo <strong> settings.py </strong>, nesse arquivo terá todas as configrações da nossa aplicação, devemos procurar dentro dele duas linhas a primeira é <strong> LANGUAGE_CODE = ‘en-us’ </strong> e mudar para <strong> LANGUAGE_CODE = ‘pt-br’ </strong> e a segunda é <strong> TIME_ZONE = ‘UTC’ </strong> e mudar para <strong> TIME_ZONE = ‘America/Sao_Paulo’ </strong>, após essas mudanças, quando atualizarmos a página do servidor, ela estará em portugues Brasil, essas alterações são importantes pois vai manter toda nossa infraestrutura em portugues.
+
+  As mudanças ficaram da seguinte forma
+
+  <strong> LANGUAGE_CODE = ‘en-us’ </strong> → <strong> LANGUAGE_CODE = ‘pt-br’ </strong>
+
+  <strong> TIME_ZONE = ‘UTC’ </strong> → <strong> TIME_ZONE = ‘America/Sao_Paulo’ </strong>
+
+
 </p>
