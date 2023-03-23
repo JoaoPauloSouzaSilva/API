@@ -34,9 +34,11 @@
 <p>
   Inicialmente deve ser criado uma pasta para colocarmos a nossa API dentro, no exemplo a pasta vai ser chamada de API. Agora iremos criar o ambiente virtual, no terminal do vscode, o botão está localizado na parte superior esquerda, após aberto, digite o comando:
 
-  <strong>
-    >>> python3 -m venv ./venv
-  </strong>
+  <p>
+    <strong>
+      >>> python3 -m venv ./venv
+    </strong>
+  </p>
 
   ⚠️ É importante ressaltar que sempre após a escrita de um comando no terminal, deve-se pressionar o enter, para que o comando seja executado.
 
@@ -44,9 +46,11 @@
 
   Agora devemos ativar a venv, também no terminal deve-se digitar o comando:
 
-  <strong>
-    >>> venv/Scripts/activate
-  </strong>
+  <p>
+    <strong>
+      >>> venv/Scripts/activate
+    </strong>
+  </p>
 
   ⚠️ É importante ressaltar que esse comando é para o sistema operacional windows, caso o sistema operacional seja o mac ou linux, use o comando ( <strong> source venv/bin/activate </strong> ).
 
@@ -54,36 +58,41 @@
 
   Agora iremos iniciar a instalação das dependências do ambiente virtual, primeiramente instalaremos o Django com o seguinte comando 
 
-  <strong>
-    >>> pip install django
-  </strong>
+  <p>
+    <strong>
+      >>> pip install django
+    </strong>
+  </p>
 
   Possivelmente o terminal indicará um upgrading, e lhe dará o comando, o mesmo estará amarelo, caso não encontre o comando para o upgrading, digite o seguinte comando ( <strong> pip install –upgrade pip </strong> ) 
 
   Para termos certeza de que o django foi instalado, usaremos o seguinte comando para visualizarmos quais as dependências que o projeto possui
 
-  <strong>
-    >>> pip freeze 
-  </strong>
-
+  <p>
+    <strong>
+      >>> pip freeze 
+    </strong>
+  </p>
 
   O terminal retornará uma lista  de dependências e é necessário que o django esteja presente para prosseguirmos. 
 
   Agora iremos criar a nossa aplicação, a partir do comando  
 
-  <strong>
-    >>> django-admin startproject config .
-  </strong>
-
+  <p>
+    <strong>
+      >>> django-admin startproject config .
+    </strong>
+  </p>
 
   O <strong> django-admin </strong> será responsável por todas as configurações da nossa aplicação, para confirmarmos que deu tudo certo, dentro da nossa pasta API, terá uma nova pasta chamada config e um arquivo .py chamado manage. 
 
   Para rodar o nosso servidor devemos utilizar o comando 
 
-  <strong>
-    >>> python manage.py runserver .
-  </strong>
-
+  <p>
+    <strong>
+      >>> python manage.py runserver .
+    </strong>
+  </p>
 
   ❌ Após apertar enter, aparecerá uma mensagem dizendo que existem algumas migrações pendentes, mais a frente resolveremos esse ponto. 
 
@@ -95,9 +104,13 @@
 
   As mudanças ficaram da seguinte forma
 
-  <strong> LANGUAGE_CODE = ‘en-us’ </strong> → <strong> LANGUAGE_CODE = ‘pt-br’ </strong>
+  <p>
+    <strong> LANGUAGE_CODE = ‘en-us’ </strong> → <strong> LANGUAGE_CODE = ‘pt-br’ </strong>
+  </p>
 
-  <strong> TIME_ZONE = ‘UTC’ </strong> → <strong> TIME_ZONE = ‘America/Sao_Paulo’ </strong>
+  <p>
+    <strong> TIME_ZONE = ‘UTC’ </strong> → <strong> TIME_ZONE = ‘America/Sao_Paulo’ </strong>
+  </p>
 
 
 </p>
