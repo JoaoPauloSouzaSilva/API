@@ -54,9 +54,9 @@
 
   Agora iremos iniciar a instalação das dependências do ambiente virtual, primeiramente instalaremos o Django com o seguinte comando 
 
-    <strong>
-        >>> pip install django 
-    </strong>
+  <strong>
+    >>> pip install django
+  </strong>
 
   Possivelmente o terminal indicará um upgrading, e lhe dará o comando, o mesmo estará amarelo, caso não encontre o comando para o upgrading, digite o seguinte comando ( <strong> pip install –upgrade pip </strong> ) 
 
@@ -66,6 +66,7 @@
     >>> pip freeze 
   </strong>
 
+
   O terminal retornará uma lista  de dependências e é necessário que o django esteja presente para prosseguirmos. 
 
   Agora iremos criar a nossa aplicação, a partir do comando  
@@ -74,6 +75,7 @@
     >>> django-admin startproject config .
   </strong>
 
+
   O <strong> django-admin </strong> será responsável por todas as configurações da nossa aplicação, para confirmarmos que deu tudo certo, dentro da nossa pasta API, terá uma nova pasta chamada config e um arquivo .py chamado manage. 
 
   Para rodar o nosso servidor devemos utilizar o comando 
@@ -81,6 +83,7 @@
   <strong>
     >>> python manage.py runserver .
   </strong>
+
 
   ❌ Após apertar enter, aparecerá uma mensagem dizendo que existem algumas migrações pendentes, mais a frente resolveremos esse ponto. 
 
