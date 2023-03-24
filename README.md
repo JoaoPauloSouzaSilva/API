@@ -243,4 +243,11 @@
 
   Para realizar a hospedagem, após os passos anteriores, basta seguir o passo a passo que se encontra no seguinte link https://acervolima.com/como-implantar-o-projeto-django-no-pythonanywhere/ 
 
+  É importante ressaltar que existem outras maneiras de criar uma API, sendo através de outras linguagens, ou até mesmo usando o Django com outros banco de dados, por exemplo se quiser usar o Django com o postgres acesse o passo a passo do link https://horadecodar.com.br/2019/01/24/integrando-django-com-postegresql-windows-e-linux/. Outra informação necessária é que a API criada não possui interação com o Dbaas(software e/ou serviços que permitem que usuários configurem, operem e escalem bancos de dados sem precisar configurar hardware físico, instalar softwares ou configurar para desempenho. Todas as tarefas administrativas e a manutenção são conduzidas pelo fornecedor do serviço e tudo que o usuário ou proprietário da aplicação precisa fazer é acessar e usar o banco de dados. Obviamente, o nível de controle pode variar, dependendo do que o usuário prefere e do que o fornecedor do serviço oferece. )
+</p>
+
+<h3>🚩 End-Points</h3>
+<hr>
+<p>
+
 </p>
