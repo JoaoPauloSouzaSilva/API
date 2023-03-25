@@ -255,7 +255,7 @@
 
   A APi que construímos, por ser um exemplo simples que tem como intuito ensinar como se cria uma api utilizando django e postgre, possui dois end-pionts que são o ``` /Aluno ```, que mostra a tabela com todos os alunos que estão inseridos no nosso banco de dados, e o ``` /Aluno/(id) ```, que mostra a informações de um aluno a partir do seu id que foi inserido no end-point. Para realizarmos um teste com esses nossos end-points, utilizaremos a plataforma do Postman, uma plataforma gratuita que tem como objetivo testar os end-points, entretanto, é necessário possuir uma conta na site para que possa realizar o seu teste, para fazer inscrição acesse https://identity.getpostman.com/signup. 
 
-  Assim que criar uma conta no postman, clique no botão (+)que se encontra próximo ao botão ( explore - último botão do menu, abrirá um novo campo que terá uma caixa de texto onde será inserido o nosso link juntamente com o end-point(o campo em questão está ao lado do botão azul escrito “Send” e no campo de texto estará escrito “Enter url or paste text” )).
+  Assim que criar uma conta no postman, clique no botão (+) que se encontra próximo ao botão ( explore - último botão do menu, abrirá um novo campo que terá uma caixa de texto onde será inserido o nosso link juntamente com o end-point(o campo em questão está ao lado do botão azul escrito “Send” e no campo de texto estará escrito “Enter url or paste text” )).
 
   Testando os End-Points 
 
@@ -264,15 +264,24 @@
     <img src="images/api_alunos_id.png" width = "450px" style="margin: auto;">
   </div>
 
-  Existem outras funções a serem testadas, como o update, o post e o delete, para realizar o update, é preciso mudar o get para o put e assim será possível fazer a atualização, para fazer o post(adicionar)é necessário mudar o botão para post e para deletar tem que fazer a mesma alteração, porém não para put, mas para delete, segue o resultado dos exemplos em ordem.
+  Existem outras funções a serem testadas, como o update, o post e o delete, para realizar o update, é preciso mudar o get para o PUT e assim será possível fazer a atualização, para fazer o post(adicionar) é necessário mudar o botão para POST e para deletar tem que fazer a mesma alteração, mas para DELETE, segue o resultado dos exemplos em ordem.
 
-  ! Para fazer essas alterações é preciso também, selecionar a opção(raw)que está dentro de body, que se encontra abaixo da caixa de texto que inserimos a url. 
+  ⚠️ Para fazer essas alterações é preciso também, selecionar a opção (raw) que está dentro de body, que se encontra abaixo da caixa de texto que inserimos a url  e também alterar a opção (txt) para (JSON), ela se encontra na mesma linha que o (raw) e está na cor azul. 
 
   Update 
+  <div style="text-align: center;";>
+    <img src="images/put.png" width = "450px" style="margin: auto;">
+  </div>
 
   Post
+   <div style="text-align: center;";>
+    <img src="images/post.png" width = "450px" style="margin: auto;">
+  </div>
 
   Delete
+  <div style="text-align: center;";>
+    <img src="images/delete.png" width = "450px" style="margin: auto;">
+  </div>
 
   Todas as alterações feitas no postman, são salvas e alteradas na nossa API, abaixo estão imagens do antes e depois na sequência
 
@@ -282,8 +291,10 @@
   </div>
 
   Depois  
+  <div style="text-align: center;";>
+    <img src="images/depois.png" width = "450px" style="margin: auto;">
+  </div>
 
 
-  Para acessar a Api que foi criada por mim seguindo esses passos, acesse o link http://joaopaulosouzasilva.pythonanywhere.com/ 
 
 </p>
