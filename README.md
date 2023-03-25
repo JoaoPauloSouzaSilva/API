@@ -71,7 +71,7 @@
   Agora iremos criar a nossa aplicação, a partir do comando  
 
   ```
-       django-admin startproject config .
+       django-admin startproject config
   ```
 
   O <strong> django-admin </strong> será responsável por todas as configurações da nossa aplicação, para confirmarmos que deu tudo certo, dentro da nossa pasta API, terá uma nova pasta chamada config e um arquivo .py chamado manage. 
@@ -79,7 +79,7 @@
   Para rodar o nosso servidor devemos utilizar o comando 
 
   ```
-       python manage.py runserver .
+       python manage.py runserver 
   ```
 
   ❌ Após apertar enter, aparecerá uma mensagem dizendo que existem algumas migrações pendentes, mais a frente resolveremos esse ponto. 
@@ -249,5 +249,41 @@
 <h3>🚩 End-Points</h3>
 <hr>
 <p>
+  Um end-point nada mais é que uma url usada para ter acesso aos dados, em um exemplo mais prático, a url base que foi gerada para a gente quando iniciamos o nosso server é como se fosse um prédio e cada parte adicionada ao final fosse uma sala, por exemplo vamos chamar nossa url base de Escola, como usamos anteriormente o /admin, nesse exemplo do prédio é como se quando acessarmos o Escola/admin estivéssemos entrado na escola e acessado a sala da administração.
+
+  ⚠️ É importante ressaltar que o /admin não é um end-point, o mesmo foi utilizado no exemplo com o intuito de torná-lo mais fácil de visualizar
+
+  A APi que construímos, por ser um exemplo simples que tem como intuito ensinar como se cria uma api utilizando django e postgre, possui dois end-pionts que são o ``` /Aluno ```, que mostra a tabela com todos os alunos que estão inseridos no nosso banco de dados, e o ``` /Aluno/(id) ```, que mostra a informações de um aluno a partir do seu id que foi inserido no end-point. Para realizarmos um teste com esses nossos end-points, utilizaremos a plataforma do Postman, uma plataforma gratuita que tem como objetivo testar os end-points, entretanto, é necessário possuir uma conta na site para que possa realizar o seu teste, para fazer inscrição acesse https://identity.getpostman.com/signup. 
+
+  Assim que criar uma conta no postman, clique no botão (+)que se encontra próximo ao botão ( explore - último botão do menu, abrirá um novo campo que terá uma caixa de texto onde será inserido o nosso link juntamente com o end-point(o campo em questão está ao lado do botão azul escrito “Send” e no campo de texto estará escrito “Enter url or paste text” )).
+
+  Testando os End-Points 
+
+  <div style="text-align: center;";>
+    <img src="imagens/api_alunos.png" width = "450px" style="margin: auto;">
+    <img src="imagens/api_alunos_id.png" width = "450px" style="margin: auto;">
+  </div>
+
+  Existem outras funções a serem testadas, como o update, o post e o delete, para realizar o update, é preciso mudar o get para o put e assim será possível fazer a atualização, para fazer o post(adicionar)é necessário mudar o botão para post e para deletar tem que fazer a mesma alteração, porém não para put, mas para delete, segue o resultado dos exemplos em ordem.
+
+  ! Para fazer essas alterações é preciso também, selecionar a opção(raw)que está dentro de body, que se encontra abaixo da caixa de texto que inserimos a url. 
+
+  Update 
+
+  Post
+
+  Delete
+
+  Todas as alterações feitas no postman, são salvas e alteradas na nossa API, abaixo estão imagens do antes e depois na sequência
+
+  Antes 
+  <div style="text-align: center;";>
+    <img src="imagens/antes.png" width = "450px" style="margin: auto;">
+  </div>
+
+  Depois  
+
+
+  Para acessar a Api que foi criada por mim seguindo esses passos, acesse o link http://joaopaulosouzasilva.pythonanywhere.com/ 
 
 </p>
