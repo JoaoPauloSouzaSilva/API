@@ -260,8 +260,8 @@
   Testando os End-Points 
 
   <div style="text-align: center;";>
-    <img src="imagens/api_alunos.png" width = "450px" style="margin: auto;">
-    <img src="imagens/api_alunos_id.png" width = "450px" style="margin: auto;">
+    <img src="images/api_alunos.png" width = "450px" style="margin: auto;">
+    <img src="images/api_alunos_id.png" width = "450px" style="margin: auto;">
   </div>
 
   Existem outras funções a serem testadas, como o update, o post e o delete, para realizar o update, é preciso mudar o get para o put e assim será possível fazer a atualização, para fazer o post(adicionar)é necessário mudar o botão para post e para deletar tem que fazer a mesma alteração, porém não para put, mas para delete, segue o resultado dos exemplos em ordem.
@@ -278,7 +278,7 @@
 
   Antes 
   <div style="text-align: center;";>
-    <img src="imagens/antes.png" width = "450px" style="margin: auto;">
+    <img src="images/antes.png" width = "450px" style="margin: auto;">
   </div>
 
   Depois  
